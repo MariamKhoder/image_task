@@ -21,10 +21,10 @@
           run: docker login --username ${{ secrets.MARIAM_REDA_MOHAMED_2023040387 }} --password ${{ secrets.PASS }}
 
         - name: "building image"
-          run: docker build -t ${{ secrets.MARIAM_REDA_MOHAMED_2023040387 }}/mariam_reda_mohamed_2023040387_image .
+          run: docker build -t ${{ secrets.MARIAM_REDA_MOHAMED_2023040387 }}/mariam_reda_mohamed .
 
         - name: "pushing to docker hub"  
-          run: docker push ${{ secrets.MARIAM_REDA_MOHAMED_2023040387 }}/mariam_reda_mohamed_2023040387_image 
+          run: docker push ${{ secrets.MARIAM_REDA_MOHAMED_2023040387 }}/mariam_reda_mohamed
 
 
 
